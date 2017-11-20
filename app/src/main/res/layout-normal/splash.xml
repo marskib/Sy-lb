@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/SplashEkran"
+    android:layout_width="550dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="normal">
+
+    <TextView
+        android:id="@+id/autyzmsoftpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="AutyzmSoft.pl"
+        android:autoLink="web"
+        android:textStyle="bold"
+        android:textSize="24sp">
+    </TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <CheckBox android:id="@+id/cb_znikacz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sylaba znika samodzielnie"
+            android:checked="true">
+        </CheckBox>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <CheckBox android:id="@+id/cb_nosound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Wyłącz głos ">
+            </CheckBox>
+
+            <CheckBox android:id="@+id/cb_tlo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Zielone tło">
+            </CheckBox>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/buforek1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="4sp"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Zmiana zestawu sylab - szybki gest   Palec w Górę / Klawisz Menu">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/pusty1"
+        android:textSize="2px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Wielkie/Małe litery - dotknij i przytrzymaj">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Ustawienia - 2-krotne puknięcie">
+    </TextView>
+
+    <TextView
+        android:id="@+id/pusty2"
+        android:textSize="5sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+    <TextView
+        android:id="@+id/gwiazdki_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="  ** - zestawy dostępne w pełnej wersji">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/buforek2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="5sp"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+</LinearLayout>

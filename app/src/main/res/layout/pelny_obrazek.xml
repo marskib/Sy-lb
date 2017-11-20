@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/maroon"
+    android:layout_height="match_parent">
+
+
+
+    <autyzmsoft.pl.sylaby.ResizeTextView
+        android:id="@+id/imageViewObrazek"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:textSize="@dimen/text_size_pelny_obrazek"
+
+        android:background="@drawable/customborder"
+
+
+        android:textStyle="bold"
+
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+
+        android:maxLines="1"
+
+        android:layout_centerInParent="true"
+
+        />
+
+
+    <!--android:layout_weight="1"-->
+
+</RelativeLayout>

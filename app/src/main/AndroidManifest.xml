@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="autyzmsoft.pl.sylaby">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/autyzmsoft"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="landscape"
+        android:configChanges="keyboardHidden|orientation|screenSize"> <!-- to powoduje, ze obrot ekranu nie wywola na nowo tworzenia acivity (a wiec OnCtrate i trudnosci z tym zwiazane (splashOkno) ...) Mozna uzywac zamiennie z parametrem powyzej -->
+
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".SplashKlasa"
+            android:label="aplikacja Sylaby - nauka odczytywania sylab"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" > <!-- male okienko na srodku, nie przykrywa macierzystego activity -->
+
+            <!--  to robi przezroczystosc: android:theme="@android:style/Theme.Translucent" > -->
+
+            <intent-filter>
+                <action android:name="autyzmsoft.pl.sylaby.SplashKlasa" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".PelnyObrazek"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="autyzmsoft.pl.sylaby.PelnyObrazek" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+    </application>
+</manifest>
